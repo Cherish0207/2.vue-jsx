@@ -1,6 +1,7 @@
 export default {
-  render(h) {
-    return h("h" + this.type, {}, this.$slots.default);
+  render() {
+    const tag = "h" + this.type;
+    return <tag>{this.$slots.default}</tag>;
   },
   props: {
     type: {
