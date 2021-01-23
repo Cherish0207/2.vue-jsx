@@ -1,9 +1,14 @@
 <template>
-  <Label :type="1">title</Label>
+  <List :data="data"></List>
 </template>
 <script>
-import Label from "./components/Label";
+import List from "./components/List";
 export default {
-  components: { Label },
+  data() {
+    return { data: ["苹果", "香蕉", "橘子"] };
+  },
+  components: {
+    List,
+  },
 };
 </script>
